@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Coordenates } from './components/coordenates.component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super();
+
+    this.state = {
+      iss: {},
+    }
+  }
+
+  //This is a lifecycle method
+  componentDidMount() {
+    fetch('http://api.open-notify.org/iss-now.json') // fectch returns a promise
+    .then(response => response.json()) // this returns a response that we need to return in a json format
+    .then(coordenates => this.setState({iss: coordenates}));  // this returns an array of objects with the coordenates data in the api
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Coordenates iss={this.state.iss} />
+      </div>
+    );
+  } 
 }
 
 export default App;
