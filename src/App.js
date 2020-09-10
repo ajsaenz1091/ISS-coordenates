@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Coordenates } from './components/coordenates.component';
+const cors = require('cors');
+app.use(cors());
 
 class App extends Component {
   constructor(){
