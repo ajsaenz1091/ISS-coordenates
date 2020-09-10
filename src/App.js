@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Coordenates } from './components/coordenates.component';
-const cors = require('cors');
-app.use(cors());
+// import cors from 'cors';
+
+// app.use(cors());
 
 class App extends Component {
   constructor(){
@@ -15,7 +16,7 @@ class App extends Component {
 
   //This is a lifecycle method
   componentDidMount() {
-    fetch('http://api.open-notify.org/iss-now.json') // fectch returns a promise
+    fetch('https://api.open-notify.org/iss-now.json') // fectch returns a promise
     .then(response => response.json()) // this returns a response that we need to return in a json format
     .then(coordenates => this.setState({iss: coordenates}));  // this returns an array of objects with the coordenates data in the api
   }
