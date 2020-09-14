@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/iss-coordenates/static/css/main.05add8ca.chunk.css",
+    "main.js": "/iss-coordenates/static/js/main.b9bd1b96.chunk.js",
+    "main.js.map": "/iss-coordenates/static/js/main.b9bd1b96.chunk.js.map",
+    "runtime-main.js": "/iss-coordenates/static/js/runtime-main.5dd5a82e.js",
+    "runtime-main.js.map": "/iss-coordenates/static/js/runtime-main.5dd5a82e.js.map",
+    "static/js/2.d615f2f8.chunk.js": "/iss-coordenates/static/js/2.d615f2f8.chunk.js",
+    "static/js/2.d615f2f8.chunk.js.map": "/iss-coordenates/static/js/2.d615f2f8.chunk.js.map",
+    "index.html": "/iss-coordenates/index.html",
+    "precache-manifest.744c1dfa6f1cf95c4774a8c981f2de59.js": "/iss-coordenates/precache-manifest.744c1dfa6f1cf95c4774a8c981f2de59.js",
+    "service-worker.js": "/iss-coordenates/service-worker.js",
+    "static/css/main.05add8ca.chunk.css.map": "/iss-coordenates/static/css/main.05add8ca.chunk.css.map",
+    "static/js/2.d615f2f8.chunk.js.LICENSE.txt": "/iss-coordenates/static/js/2.d615f2f8.chunk.js.LICENSE.txt",
+    "static/media/coordenates.style.css": "/iss-coordenates/static/media/space.3c4ffbcb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5dd5a82e.js",
+    "static/js/2.d615f2f8.chunk.js",
+    "static/css/main.05add8ca.chunk.css",
+    "static/js/main.b9bd1b96.chunk.js"
+  ]
+}
